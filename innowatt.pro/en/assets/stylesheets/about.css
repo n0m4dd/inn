@@ -1,0 +1,51 @@
+.about{padding-bottom: 110px; position: relative;}
+.about:before{content: ''; width: 570px; height: calc(100% - 385px); background-color: #edfabd; position: absolute; top: 385px; left: 140px;}
+.about header{font: 14px GothamPro-Medium; color: #3a3a3a; padding: 20px 0 0 545px; margin-left: -240px; min-height: 438px; background: url('../images/headers/about.jpg') 0 0 no-repeat;}
+.about header p{line-height: 21px;}
+.about h1{color: #685b4f; margin: 55px 0 45px 0;}
+
+.about .conteiner{margin: 0 auto; max-width: 800px;}
+.about .content{line-height: 21px; padding-top: 90px;}
+
+.about .list{font: 14px GothamPro-Medium; line-height: 21px; color: #685b4f; padding-top: 40px;}
+.about .list li{padding-top: 85px; background-position: 0 0; background-repeat: no-repeat; display: block;}
+.about .list li span{font: 28px GothamPro-Bold; color: #7a9c2f; margin-bottom: 40px; display: block;}
+.about .list li.mission{width: 310px; background-image: url('../images/icons/mission.png');}
+.about .list li.target{margin: -5px 0 -40px calc(100% - 370px); width: 420px; background-image: url('../images/icons/target.png');}
+.about .list li.task{width: 350px; background-image: url('../images/icons/task.png');}
+
+
+@media all and (max-width: 1280px) {
+	.about{padding-bottom: 60px;}
+	.about:before{all: unset;}
+	.about header{padding-left: 400px; margin-left: -40px; min-height: 276px; background-size: 346px auto;}
+	.about .conteiner{margin: 0 40px; max-width: 100%;}
+	.about .content{padding-top: 30px;}
+	.about .list li.target{margin: 40px 0 40px 40%; width: 45%;}
+}
+
+@media all and (max-width: 980px) {
+	.about header{padding-left: 0; margin-left: 0; min-height: auto; background: none;}
+	.about h1{margin: 35px 0;}
+	.about .content{padding-top: 15px;}
+}
+
+@media all and (max-width: 780px) {
+	.about .list li.mission, .about .list li.task, .about .list li.target{width: auto;}
+	.about .list li.target{margin: 40px 0;}
+	.about .list li span{font-size: 25px; margin-bottom: 20px;}
+}
+
+@media all and (max-width: 680px) {
+	.about .conteiner{margin: 0 20px;}
+	.about .list li{padding-top: 55px; background-size: 44px 42px;}
+	.about .list li span{font-size: 20px; margin-bottom: 10px;}
+}
+
+@media all and (max-width: 480px) {
+
+}
+
+@media all and (max-width: 380px) {
+
+}

@@ -1,0 +1,118 @@
+.services{padding-bottom: 60px; position: relative;}
+.services header{font: 14px GothamPro-Medium; color: #3a3a3a; padding: 40px 0 0 545px; margin-left: -140px; min-height: 438px; background: url('../images/headers/services.jpg') 0 0 no-repeat;}
+.services header p{line-height: 21px;}
+.services h1{color: #685b4f; margin: 55px 0 45px 0;}
+
+.services .conteiner{margin: 0 auto; max-width: 980px; position: relative;}
+
+.services .tabs{padding: 150px 0 60px 0; margin: -90px auto 0 auto; max-width: 980px; position: relative; }
+.services .tabs:before{content: ''; width: 660px; height: 100%; background-color: #edfabd; position: absolute; top: 0; left: -100px;}
+
+
+.services .short-tabs{float: right; width: 350px;}
+.services .short-tabs .col{font: 14px GothamPro-Bold; color: #685b4f; text-transform: uppercase; margin-bottom: 60px; position: relative;}
+.services .short-tabs .col.current{display: none;}
+.services .short-tabs .col .num{font: 28px GothamPro-Black; color: #685b4f; padding-bottom: 10px;}
+
+.services .full-tabs{float: left; width: 510px; position: relative;}
+.services .tab{margin-bottom: 0; display: none;}
+.services .tab.current{display: block;}
+.services .tab.current .num{font: 52px GothamPro-Black; color: #7a9c2f; padding-bottom: 50px;}
+.services .tab.current .title{font: 28px GothamPro-Bold; color: #7a9c2f; text-transform: none; margin-bottom: 46px;}
+.services .tab.current .txt{line-height: 21px; display: block;}
+
+.services .nav-tabs{position: absolute; top: 160px; left: 420px; z-index: 30;}
+.services .nav-tabs div{cursor: pointer; width: 15px; height: 26px; background-image: url('../images/nav_tabs.png'); display: inline-block;}
+.services .nav-tabs div:hover{opacity: 0.7; transition: all 200ms ease-out;}
+.services .nav-tabs .prev{margin-right: 40px; background-position: top;}
+.services .nav-tabs .next{background-position: bottom;}
+
+.services .btn-serv{text-align: right; padding-right: 20px;}
+
+
+@media all and (max-width: 1280px) {
+	main{padding: 0 40px;}
+	.services header{padding-left: 400px; margin-left: -40px; min-height: 276px; background-size: 346px auto;}
+	.services .conteiner{margin: 0; max-width: 100%;}
+
+	.services .tabs{margin: 60px 0; padding: 0; max-width: auto;}
+	.services .tabs:before{all: unset; display: none;}
+	.services .nav-tabs{top: 56px; left: 50%;}
+
+	.services .full-tabs{width: 60%; background-color: #edfabd;}
+	.services .short-tabs{width: 35%;}
+
+	.services .tab{padding: 40px;}
+	.services .tab.title{margin-bottom: 25px;}
+
+	.services .btn-serv{padding-right: 0;}
+}
+
+@media all and (max-width: 980px) {
+	.services header{padding: 20px 0 0 0; margin-left: 0; min-height: auto; background: none;}
+	.services h1{margin: 35px 0 20px 0;}
+
+	.services .short-tabs, .services .nav-tabs{display: none;}
+	.services .full-tabs{width: auto; float: none;}
+
+	.services .tabs{padding: 40px 0 0 0; margin: 0 -40px;}
+	.services .tab{cursor: pointer; padding: 30px 80px 35px 40px; margin: 0; background: #efefef; border-bottom: 1px solid #e7e7e7; display: block; position: relative;}
+	.services .tab .num{font: 28px GothamPro-Black; color: #685b4f; padding-bottom: 10px;}
+	.services .tab .title{font: 14px GothamPro-Bold; color: #685b4f; text-transform: uppercase;}
+	.services .tab .txt{display: none;}
+
+	.services .tab.current{cursor: auto; padding-top: 40px; background-color: #edfabd;}
+	.services .tab.current .num{font-size: 28px; padding-bottom: 30px;}
+	.services .tab.current .txt{display: block;}
+
+	.services .tab .title:after, .services .tab .title:before{content: ''; width: 2px; height: 25px; background-color: #333; position: absolute; top: 29px;}
+	.services .tab .title:after{transform: rotate(45deg); right: 40px;}
+	.services .tab .title:before{transform: rotate(-45deg); right: 58px;}
+
+	.services .tab.current .title:after, .services .tab.current .title:before{background-color: #7a9c30; top: 40px;}
+	.services .tab.current .title:after{transform: rotate(-45deg);}
+	.services .tab.current .title:before{transform: rotate(45deg);}
+
+	.services .tab.current .title{font-size: 24px;}
+}
+
+@media all and (max-width: 780px) {
+	.nav-tabs{top: 85px;}
+	.nav-tabs div{width: 10px; height: 17px; background-size: 10px auto;}
+	.nav-tabs .prev{margin-right: 25px;}
+
+	.services .tab .num{font-size: 20px; padding-bottom: 10px;}
+	.services .tab.current .num{font-size: 20px; padding-bottom: 15px;}
+	.services .tab.current .title{font-size: 20px; margin-bottom: 20px;}
+
+	.services .tab .title:after, .services .tab .title:before{height: 15px; top: 29px;}
+	.services .tab .title:after{right: 40px;}
+	.services .tab .title:before{right: 50px;}
+
+	.services .tab.current .title:after, .services .tab.current .title:before{top: 45px;}
+}
+
+@media all and (max-width: 680px) {
+	main{padding: 0 20px;}
+	.services .tabs{padding-top: 20px; margin: 0 -20px;}
+	.services .tab{padding: 20px 60px 25px 20px;}
+	.services .tab.current{padding: 30px 20px 20px 20px;}
+	.services .tab.current .title:after, .services .tab.current .title:before{top: 35px;}
+
+}
+
+@media all and (max-width: 480px) {
+	.services .tab.current .num{font-size: 18px;}
+	.services .tab.current .title{font-size: 18px;}
+	.services .tab .num{font-size: 18px;}
+	.services .tab .title{font-size: 13px;}
+
+	.services .tab.current .title:after, .services .tab.current .title:before{top: 33px;}
+	.services .tab .title:after, .services .tab .title:before{top: 25px;}
+
+	.energy .btn-serv{display: none;}
+}
+
+@media all and (max-width: 380px) {
+
+}

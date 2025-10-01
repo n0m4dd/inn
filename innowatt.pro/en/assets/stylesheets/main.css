@@ -1,0 +1,210 @@
+/* Banner */
+.header .group{text-align: center; padding: 140px 0;}
+.header .group > div{vertical-align: middle; display: inline-block;}
+.header .group .title{font: 36px GothamPro-Black; color: #fff; text-align: left; /*margin-right: 110px;*/ width: calc(100% - 595px);}
+.header .group .title a{color: #fff;}
+.header .group .title a span{color: #d1f25a;}
+
+main{padding: 70px 40px 90px 40px; max-width: 1000px; margin: 0 auto;}
+
+.tech, .services, .advantage{position: relative;}
+.tech:before, .services:before, .advantage:before{content: ''; width: 330px; height: 330px; position: absolute; top: 0; left: 0; z-index: 10;}
+
+.tech h2, .services h2, .advantage h2, .news h2{font: 52px GothamPro-Black; color: #685b4f; position: relative; z-index: 20;}
+.tech h2 a, .services h2 a, .news h2 a{color: #685b4f; text-decoration: none;}
+.tech h2 a:after, .services h2 a:after, .news h2 a:after{content: ''; vertical-align: middle; margin-left: 50px; width: 47px; height: 47px; background-image: url('../images/icons/more.png'); display: inline-block;}
+.tech h2 a:hover, .services h2 a:hover, .news h2 a:hover{color: #8e7966; transition: color 300ms ease-out;}
+.tech h2 a:hover:after, .services h2 a:hover:after, .news h2 a:hover:after{margin-left: 55px; transition: margin-left 100ms ease-out;}
+
+.tech .list, .services .list{list-style-type: none; margin: 0; padding: 35px 0 0 0; counter-reset: section;}
+.tech .list li, .services .list li{position: relative;}
+
+/* Technologies */
+.tech:before{background-color: #d1f25a;}
+.tech h2{padding: 140px 0 155px 322px; background: url('../images/icons/technology.png') 0 0 no-repeat; top: -25px; left: -25px;}
+
+.tech .list li{padding: 8px 0 40px 95px;}
+.tech .list li:last-child, .tech .list li:last-child span{padding-bottom: 0;}
+.tech .list li:before{font: 52px GothamPro-Black; color: #d1f25a; content: "0" counter(section); counter-increment: section; position: absolute; top: -7px; left: 0;}
+.tech .list li span{font: 26px GothamPro-Bold; color: #7a9c2f; padding-bottom: 20px; display: block;}
+
+/* Services */
+.cont_services{margin: 105px -140px 0 -140px; padding: 0 140px; background-color: #fbfbfb;}
+.services:before{background-color: #eae9e7;}
+.services h2{padding: 110px 0 155px 295px; background: url('../images/icons/services.png') 40px 60px no-repeat;}
+
+.services li{float: left; padding: 90px 0; width: 40%; position: relative;}
+.services li:nth-child(2n){float: right;}
+.services .list li:before{font: 52px GothamPro-Black; color: #c5bfb9; content: "0" counter(section); counter-increment: section; position: absolute; top: 0; left: 0;}
+
+.services li span{display: block;}
+.services li span.name{font: 26px GothamPro-Bold; color: #685b4f; padding-bottom: 10px}
+.services li span.txt{margin: 15px 0;}
+.services li.energyout span.name{padding-left: 100px; background: url('../images/icons/energyout_serv.png') 0 0 no-repeat;}
+.services li.consult span.name{padding-left: 90px; background: url('../images/icons/consult_serv.png') 0 0 no-repeat;}
+.services li.electro span.name{padding-left: 90px; background: url('../images/icons/electro_serv.png') 0 0 no-repeat;}
+
+.services li a{color: #7a9b2e; text-decoration: none;}
+.services li a:hover{text-decoration: underline;}
+
+/* Advantage */
+.advantage{margin-top: 95px;}
+.advantage:before{background-color: #d1f25a;}
+.advantage h2{padding: 75px 0 125px 298px; background: url('../images/icons/advantage.png') 55px 70px no-repeat;}
+.advantage .list{font: 14px GothamPro-Bold; color: #7a9c2f; margin-top: -70px;}
+
+.advantage .list li{float: left; padding: 75px 0; width: 33.3%;}
+.advantage .list li:first-child{margin-left: 66.9%;}
+
+.advantage .list li{background-position: 0 0; background-repeat: no-repeat;}
+.advantage .list li.contract{background-image: url('../images/icons/contract.png');}
+.advantage .list li.bar-chart{background-image: url('../images/icons/bar_chart.png');}
+.advantage .list li.law{background-image: url('../images/icons/law.png');}
+.advantage .list li.energyout{background-image: url('../images/icons/energyout.png');}
+.advantage .list li.agregation{background-image: url('../images/icons/agregation.png');}
+.advantage .list li.pay{background-image: url('../images/icons/pay.png');}
+
+/* News */
+.news{padding: 190px 0 110px 300px; margin-top: 60px; background: url('../images/news_bg.jpg') 0 0 no-repeat;}
+
+.news .adt{padding-top: 140px;}
+.news .adt .adt_title{font: 28px GothamPro-Bold; color: #3b3b3b; margin-bottom: 20px;}
+.news .adt .more{font: 14px GothamPro-Medium; text-align: right;}
+.news .adt .more a{color: #a3bd44; text-decoration: none;}
+.news .adt .more a:hover{text-decoration: underline;}
+
+/* Support */
+.support{text-align: center; padding-top: 130px;}
+.support h2{font: 52px GothamPro-Black; color: #84a43f;}
+.support p{font: 28px GothamPro-Bold; margin: 60px 0 90px 0;}
+
+.support .btn{display: inline-block;}
+.support .btn.mail{margin-right: 25px; background-color: #aba6a1;}
+.support .btn.call{background-color: #84a43f;}
+
+.support .btn.mail:hover, .support .btn.call:hover{transition: background-color 100ms ease-out;}
+.support .btn.mail:hover{background-color: #9a9591;}
+.support .btn.call:hover{background-color: #749037;}
+
+@media all and (max-width: 1100px) {
+	.header .group{padding: 90px 0;}
+	.header .group .title{font-size: 30px; width: calc(100% - 600px);}
+	.header .group .animation{width: 450px;}
+}
+
+@media all and (max-width: 960px) {
+	main{padding: 60px 40px;}
+
+	.tech:before, .services:before, .advantage:before{width: 250px; height: 250px;}
+	.tech h2, .services h2, .advantage h2, .news h2, .support h2{font-size: 36px;}
+	.tech h2 a:after, .services h2 a:after, .news h2 a:after{margin-left: 35px; width: 43px; height: 43px; background-size: 43px;}
+	.tech h2 a:hover:after, .services h2 a:hover:after, .news h2 a:hover:after{margin-left: 40px;}
+	.tech .list, .services .list{padding: 60px 0 0 0;}
+
+	.tech h2{padding: 100px 0 100px 250px; background-size: 375px 231px; top: -15px; left: -20px;}
+	.tech .list li{padding: 4px 0 50px 75px;}
+	.tech .list li:before{font-size: 36px; top: -2px;}
+	.tech .list li span{font-size: 24px;}
+
+	.cont_services{margin: 60px -40px 0 -40px; padding: 0 40px;}
+	.services h2{padding: 80px 0 90px 220px; background-position: 60px 65px; background-size: 132px 108px;}
+	.services .list li:before{font-size: 44px;}
+	.services li{margin-bottom: 40px;}
+	.services li:last-child{margin-bottom: 0;}
+	.services li span.name{font-size: 24px;}
+	.services li, .services li:nth-child(2n){float: none; padding: 12px 0 0 90px; width: auto;}
+	.services li span.name{padding-left: 0!important; background: none!important;}
+
+	.advantage{margin-top: 60px;}
+	.advantage h2{padding: 100px 0 110px 220px; background-position: 55px 60px; background-size: 130px 120px;}
+	.advantage .list{margin-top: -50px;}
+	.advantage .list li{padding: 55px 0; background-size: 40px 40px;}
+
+	.news{padding: 90px 0 65px 300px; margin-top: 20px; margin-left: -40px;}
+	.news .adt{padding-top: 80px;}
+	.news .adt .adt_title{font-size: 24px;}
+
+	.support{padding-top: 80px;}
+	.support h2{font-size: 35px;}
+	.support p{font-size: 21px; margin: 20px 0 60px 0;}
+}
+
+@media all and (max-width: 780px) {
+	.header .group .title{font-size: 25px; text-align: center; margin: 0; width: 100%; position: absolute; left: 0; bottom: 40px;}
+	.header .group .animation{width: 100%; display: block;}
+}
+
+@media all and (max-width: 680px) {
+	.header .group{padding: 60px 0;}
+	.header .group .title{font-size: 20px;}
+
+	main{padding: 40px 20px;}
+
+	.tech:before, .services:before, .advantage:before{width: 200px; height: 200px; left: -20px;}
+	.tech h2, .services h2, .advantage h2, .news h2, .support h2{font-size: 30px;}
+	.tech h2 a:after, .services h2 a:after, .news h2 a:after{margin-left: 25px; width: 35px; height: 35px; background-size: 35px;}
+	.tech h2 a:hover:after, .services h2 a:hover:after, .news h2 a:hover:after{margin-left: 30px;}
+	.tech .list, .services .list, .advantage .list{padding: 40px 0 0 20px;}
+
+	.tech h2{padding: 60px 0 105px 180px; margin: -40px 0 0 0; background-size: 233px 145px; top: 20px; left: 0;}
+	.tech .list li{padding: 3px 0 35px 55px;}
+	.tech .list li:before{font-size: 30px; top: -3px;}
+	.tech .list li span{font-size: 20px; padding-bottom: 10px;}
+
+	.cont_services{margin: 60px -40px 0 -40px; padding: 0 40px;}
+	.services h2{padding: 60px 0 65px 180px; background-position: 34px 45px;}
+	.services .list li:before{font-size: 21px;}
+	.services li{margin-bottom: 35px;}
+	.services li span.name{font-size: 20px; padding-bottom: 0;}
+	.services li, .services li:nth-child(2n){padding: 0 0 0 45px;}
+
+	.advantage{margin: 60px 0 0 -20px;}
+	.advantage h2{padding: 90px 0 80px 180px; background-position: 35px 40px;}
+	.advantage .list{margin-top: 0; display: flex; display: -webkit-flex; flex-flow: wrap; justify-content: space-between;}
+	.advantage .list li{float: none; padding: 0 15px 10px 45px; margin-bottom: 25px; width: calc(50% - 60px); background-size: 30px;}
+	.advantage .list li:first-child{margin-left: 0;}
+
+	.news{padding: 40px 20px; margin: 20px -20px 0 -20px; background: #efefef;}
+	.news .adt .adt_title{font-size: 20px}
+	.news .adt{padding-top: 40px;}
+
+	.support{padding-top: 40px;}
+	.support p{font-size: 18px; margin: 20px 0 40px 0;}
+}
+
+@media all and (max-width: 550px) {
+	.advantage .list{flex-flow: column;}
+	.advantage .list li{margin-bottom: 15px; width: auto; min-height: 30px;}
+}
+
+@media all and (max-width: 480px) {
+	.header .group{padding: 60px 0;}
+	.tech h2, .services h2, .advantage h2, .news h2, .support h2{font-size: 25px;}
+
+	.support .btn{display: block;}
+	.support .btn.mail{margin: 0 0 15px 0;}
+}
+
+@media all and (max-width: 380px) {
+	.tech h2, .services h2, .advantage h2, .news h2{font-size: 21px;}
+	.tech h2 a, .services h2 a, .advantage h2 span{padding: 0 10px; background: rgba(255,255,255,0.7); box-decoration-break: clone; -webkit-box-decoration-break: clone;}
+	.tech .list, .services .list, .advantage .list{padding: 20px 0 0 0;}
+	.tech:before, .services:before, .advantage:before{width: 180px; height: 180px;}
+
+	.tech h2{padding: 50px 0 100px 60px; background-size: 200px 124px; top: 25px; left: 10px;}
+	.tech .list li{padding-left: 40px; padding-top: 0;}
+	.tech .list li:before{font-size: 23px; top: -4px;}
+	.tech .list li span{font-size: 17px;}
+
+	.cont_services{margin: 40px 0 0 0; padding: 0;}
+	.services h2{padding: 60px 0 65px 60px; background-size: 110px 90px; background-position: 15px 40px;}
+	.services li span.txt{margin-top: 10px;}
+	.services li, .services li:nth-child(2n){padding: 0 0 0 40px;}
+
+	.advantage{margin: 40px 0 0 0;}
+	.advantage h2{padding: 80px 0 90px 60px; background-position: 5px 40px;}
+
+	.support h2{font-size: 21px;}
+	.support p{font-size: 14px; margin: 10px 0 30px 0;}
+}
+

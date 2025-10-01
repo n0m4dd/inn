@@ -1,0 +1,69 @@
+.today header{padding: 40px 0 0 40px; height: 350px; background: url('../images/headers/today.jpg') center no-repeat;}
+.today header h1{color: #fff; margin-top: 115px;}
+
+.today .tabs{padding: 40px 0;}
+
+.today .nav-tabs{font: 14px GothamPro-Medium; float: left; margin-top: -30px; width: 30%;}
+.today .nav{cursor: pointer; text-transform: uppercase; padding: 30px 15px 30px 35px;}
+.today .nav:hover{background-color: #eee; transition: all 150ms ease-out;}
+.today .nav.current{cursor: auto; background-color: #7a9c2f;}
+.today .nav .date{color: #777; margin-bottom: 10px;}
+.today .nav .name{color: #685b4f; line-height: 21px;}
+.today .nav.current .date, .today .nav-tabs .nav.current .name{color: #fff;}
+
+.today .tabs-content{margin: 0 0 0 34%;}
+.today .tab{line-height: 21px; padding-right: 40px; display: none; overflow: hidden;}
+.today .tab.current{display: block;}
+.today .tab .date{color: #4e4f4c;}
+.today .tab h2{font: 28px GothamPro-Bold; color: #7a9c2f; margin: 15px 0 35px 0;}
+.today .tab .cols .col{width: 48%;}
+.today .tab .cols .col:nth-child(1){float: left;}
+.today .tab .cols .col:nth-child(2){float: right;}
+
+@media all and (max-width: 1280px) {
+
+
+}
+
+@media all and (max-width: 980px) {
+	.today header{height: 300px;}
+	.today header h1{margin-top: 100px;}
+
+	.today .nav-tabs{font-size: 12px; margin-top: -10px;}
+	.today .nav{padding: 20px 15px 20px 20px;}
+
+	.today .tab .cols .col{width: auto;}
+	.today .tab .cols .col:nth-child(1), .today .tab .cols .col:nth-child(2){float: none;}
+	.today .tab h2{font-size: 24px; margin: 10px 0 25px 0;}
+	.today .tab{padding-right: 20px;}
+}
+
+@media all and (max-width: 780px) {
+	main{padding: 20px 40px;}
+	.today header{padding: 0; height: auto; background: none;}
+	.today header h1{color: #685b4f; margin: 35px 0 45px 0;}
+	.today .tab{padding-right: 0;}
+
+	.today .tabs{padding: 0;}
+	.today .nav-tabs{float: none; margin: 0; width: 100%; display: flex; overflow: hidden;}
+	.today .nav-tabs .nav{padding: 20px;}
+	.today .nav .date{margin-bottom: 0;}
+	.today .nav .name{display: none;}
+
+	.today .tabs-content{margin: 20px 0 0 0;}
+	.today .tabs-content .date{display: none;}
+}
+
+@media all and (max-width: 680px) {
+	main{padding: 20px 20px 40px 20px;}
+	.today .tab h2{font-size: 20px;}
+	.today .nav-tabs .nav{padding: 15px 10px;}
+}
+
+@media all and (max-width: 480px) {
+
+}
+
+@media all and (max-width: 380px) {
+
+}

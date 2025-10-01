@@ -1,0 +1,41 @@
+.energy{padding-bottom: 60px; position: relative;}
+.energy header{font: 14px GothamPro-Medium; color: #3a3a3a; padding: 40px 0 0 545px; margin-left: -140px; min-height: 438px; background: url('../images/headers/energy.jpg') 0 0 no-repeat;}
+.energy header p{line-height: 21px;}
+.energy h1{color: #685b4f; margin: 55px 0 45px 0;}
+
+.energy .conteiner{margin: 0 auto; max-width: 980px;}
+.energy .how-to{padding-top: 60px;}
+
+.energy .btn-serv{text-align: right; padding-right: 20px;}
+
+
+@media all and (max-width: 1280px) {
+	main{padding: 0 40px;}
+	.energy header{padding-left: 400px; margin-left: -40px; min-height: 276px; background-size: 346px auto;}
+	.energy .conteiner{margin: 0; max-width: 100%;}
+	.energy .how-to{padding: 60px 0 0 0;}
+	.energy .btn-serv{padding-right: 0;}
+}
+
+@media all and (max-width: 980px) {
+	.energy header{padding: 20px 0 0 0; margin-left: 0; min-height: auto; background: none;}
+	.energy h1{margin: 35px 0 20px 0;}
+	.energy .how-to{padding-top: 40px;}
+}
+
+@media all and (max-width: 780px) {
+	.energy .how-to{padding: 40px 0;}
+}
+
+@media all and (max-width: 680px) {
+	main{padding: 0 20px;}
+	.energy .how-to{padding: 20px 0 40px 0;}
+}
+
+@media all and (max-width: 480px) {
+	.energy .btn-serv{display: none;}
+}
+
+@media all and (max-width: 380px) {
+
+}

@@ -1,0 +1,61 @@
+.technology{position: relative;}
+.technology:after{content: ''; width: 520px; height: 100%; background-color: #edfabd; position: absolute; top: 0; right: 0;}
+
+.technology header{padding: 40px 0 0 40px; height: 350px; background: url('../images/headers/technology.jpg') center no-repeat;}
+.technology header h1{color: #fff; margin-top: 115px;}
+
+.technology .conteiner{padding: 60px 0; margin: 0 auto; max-width: 900px; counter-reset: section;}
+
+.technology .row{padding-bottom: 60px; position: relative;}
+.technology .row:before{font: 52px GothamPro-Black; color: #7a9c2f; content: counter(section, decimal-leading-zero); counter-increment: section; position: absolute; top: 0; left: 0;}
+.technology .conteiner .row:last-child{padding-bottom: 0;}
+
+.technology .row .title, .technology .row .txt{width: 45%;}
+.technology .row .title{font: 26px GothamPro-Bold; color: #7a9c2f; line-height: 35px; padding-top: 75px; float: left;}
+.technology .row .txt{float: right; line-height: 21px;}
+.technology .row .txt p:first-child{margin-top: 0;}
+
+
+@media all and (max-width: 1280px) {
+	.technology:after{all: unset;}
+	.technology .conteiner{padding: 40px;}
+}
+
+@media all and (max-width: 980px) {
+	.technology header{height: 300px;}
+	.technology header h1{margin-top: 100px;}
+
+	.technology .conteiner{margin: 0; max-width: auto;}
+
+	.technology .row{padding-bottom: 40px;}
+	.technology .row .title, .technology .row .txt{width: auto;}
+	.technology .row .title, .technology .row .txt{float: none;}
+	.technology .row:before{font-size: 30px;}
+	.technology .row .title{font-size: 24px; line-height: 27px; padding: 55px 0 0 0;}
+	.technology .row .txt{padding: 20px 0 0 0;}
+}
+
+@media all and (max-width: 780px) {
+	main{padding: 20px 40px 40px 40px;}
+	.technology .conteiner{padding: 0;}
+
+	.technology header{padding: 0; height: auto; background: none;}
+	.technology header h1{color: #685b4f; margin: 35px 0 45px 0;}
+
+	.technology .row{padding-bottom: 30px;}
+	.technology .row:before{font-size: 24px;}
+	.technology .row .title{font-size: 20px; line-height: 24px; padding: 45px 0 0 0;}
+}
+
+@media all and (max-width: 680px) {
+	main{padding: 20px 20px 40px 20px;}
+}
+
+@media all and (max-width: 480px) {
+
+}
+
+@media all and (max-width: 380px) {
+	.technology .row:before{font-size: 22px;}
+	.technology .row .title{font-size: 18px; line-height: 22px; padding: 40px 0 0 0;}
+}

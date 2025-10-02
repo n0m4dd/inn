@@ -1,5 +1,5 @@
 .technology{position: relative;}
-.technology:after{content: ''; width: 520px; height: 100%; background-color: #edfabd; position: absolute; top: 0; right: 0;}
+.technology:after{content: ''; width: 1280px; height: 100%; background-color: #edfabd; position: absolute; top: 0; right: 0;}
 
 .technology header{padding: 40px 0 0 40px; height: 350px; background: url('../images/headers/technology.jpg') center no-repeat;}
 .technology header h1{color: #fff; margin-top: 115px;}

@@ -1,5 +1,5 @@
 .about{padding-bottom: 110px; position: relative;}
-.about:before{content: ''; width: 570px; height: calc(100% - 385px); background-color: #edfabd; position: absolute; top: 385px; left: 140px;}
+.about:before{content: ''; width: 1000px; height: calc(100% - 385px); background-color: #edfabd; position: absolute; top: 385px; left: 140px;}
 .about header{font: 14px GothamPro-Medium; color: #3a3a3a; padding: 20px 0 0 545px; margin-left: -240px; min-height: 438px; background: url('../images/headers/about.jpg') 0 0 no-repeat;}
 .about header p{line-height: 21px;}
 .about h1{color: #685b4f; margin: 55px 0 45px 0;}
